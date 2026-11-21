@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Pribadi — Tema Laut</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Dekorasi Gelombang Latar Belakang -->
+  <div class="ocean-bg" aria-hidden="true">
+    <div class="wave wave-1"></div>
+    <div class="wave wave-2"></div>
+    <div class="bubbles" id="bubbles"></div>
+  </div>
+
+  <!-- Navigasi -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-content">
+      <a href="#beranda" class="brand" aria-label="Beranda">
+        <span class="monogram-badge">NP</span>
+        <span class="brand-text">Samudra<span class="dot">.</span>dev</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#tentang">Tentang</a>
+        <a href="#keahlian">Keahlian</a>
+        <a href="#proyek">Proyek</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Ubah Mode Tampilan" title="Ubah Tema Terang/Gelap">
+          <span class="icon-sun">☀️</span>
+          <span class="icon-moon">🌙</span>
+        </button>
+        <button id="menuToggle" class="icon-btn mobile-only" aria-label="Buka Menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="beranda" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <div class="pill-badge">🌊 Menjelajahi Ide & Teknologi</div>
+          <h1>Halo, Saya <span class="gradient-text">Nama Lengkap Anda</span></h1>
+          <p class="subtitle">
+            Pelajar, Pembelajar Mandiri & Pengembang Web Front-End yang antusias membangun karya digital yang bersih, terstruktur, dan bermakna.
+          </p>
+          <div class="hero-cta">
+            <a href="#proyek" class="btn btn-primary">Lihat Proyek</a>
+            <a href="#kontak" class="btn btn-outline">Hubungi Saya</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="compass-card">
+            <div class="monogram-large">NP</div>
+            <div class="compass-ring"></div>
+            <div class="status-card">
+              <span class="status-dot"></span>
+              <span>Terbuka untuk kolaborasi & riset</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pembatas Ombak SVG -->
+      <div class="wave-divider">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Tentang Saya -->
+    <section id="tentang" class="section alt-bg">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">01 // PROFIL</span>
+          <h2>Tentang Saya</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-card reveal">
+            <h3>Pendekatan Berpikir</h3>
+            <p>
+              Saya percaya bahwa pemahaman mendalam berawal dari prinsip dasar (<em>first-principles</em>). Baik saat mempelajari sains maupun merancang antarmuka web, saya selalu memecah masalah kompleks menjadi bagian-bagian kecil yang logis dan mudah dipahami.
+            </p>
+            <p>
+              Seperti lautan yang tenang di permukaan namun kaya akan kehidupan di kedalamannya, saya menyukai desain minimalis yang didukung struktur kode yang kuat.
+            </p>
+          </div>
+
+          <div class="stats-grid reveal">
+            <div class="stat-box glass-card">
+              <span class="stat-number" data-target="12">0</span>
+              <span class="stat-label">Proyek & Eksperimen</span>
+            </div>
+            <div class="stat-box glass-card">
+              <span class="stat-number" data-target="100">0</span>
+              <span class="stat-label">% Kode Murni (Vanilla)</span>
+            </div>
+            <div class="stat-box glass-card">
+              <span class="stat-number" data-target="4">0</span>
+              <span class="stat-label">Bidang Minat Utama</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Keahlian & Minat -->
+    <section id="keahlian" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">02 // KOMPETENSI</span>
+          <h2>Keahlian & Fokus</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card glass-card reveal">
+            <div class="skill-icon">🧭</div>
+            <h3>Pengembangan Web</h3>
+            <p>Membangun tata letak responsif dengan HTML5 semantik, CSS modern (Grid/Flexbox), dan Vanilla JavaScript tanpa ketergantungan library berat.</p>
+            <div class="tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+          </article>
+
+          <article class="skill-card glass-card reveal">
+            <div class="skill-icon">🧬</div>
+            <h3>Sains & Riset</h3>
+            <p>Analisis data ilmiah, biologi seluler, serta penyusunan karya tulis penelitian terstruktur berbasis bukti dan literatur akademik.</p>
+            <div class="tags">
+              <span>Biologi</span>
+              <span>Analisis Data</span>
+              <span>Riset</span>
+            </div>
+          </article>
+
+          <article class="skill-card glass-card reveal">
+            <div class="skill-icon">🎨</div>
+            <h3>Desain Visual & UI</h3>
+            <p>Perancangan identitas visual, infografis edukatif, dan tipografi yang mengutamakan keterbacaan serta kenyamanan mata.</p>
+            <div class="tags">
+              <span>UI/UX</span>
+              <span>Infografis</span>
+              <span>Branding</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyek Pilihan -->
+    <section id="proyek" class="section alt-bg">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">03 // KARYA</span>
+          <h2>Proyek Pilihan</h2>
+        </div>
+
+        <div class="filter-bar reveal">
+          <button class="filter-btn active" data-filter="all">Semua</button>
+          <button class="filter-btn" data-filter="web">Web Dev</button>
+          <button class="filter-btn" data-filter="riset">Riset & Desain</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <article class="project-card glass-card reveal" data-category="web">
+            <div class="project-banner ocean-grad-1">
+              <span class="project-badge">Web App</span>
+            </div>
+            <div class="project-body">
+              <h3>Sistem Grid Target 9x9</h3>
+              <p>Aplikasi perencana tujuan interaktif berbasis metode Mandala Chart untuk memecah target besar menjadi kebiasaan harian.</p>
+              <div class="project-links">
+                <a href="#" class="text-link">Lihat Detail →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal" data-category="riset">
+            <div class="project-banner ocean-grad-2">
+              <span class="project-badge">Infografis</span>
+            </div>
+            <div class="project-body">
+              <h3>Visualisasi Data Kesehatan</h3>
+              <p>Infografis berbasis jurnal ilmiah mengenai korelasi pola sarapan dan aktivitas fisik terhadap kualitas hidup pelajar.</p>
+              <div class="project-links">
+                <a href="#" class="text-link">Lihat Detail →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal" data-category="web">
+            <div class="project-banner ocean-grad-3">
+              <span class="project-badge">Portofolio</span>
+            </div>
+            <div class="project-body">
+              <h3>Web Profil Minimalis</h3>
+              <p>Situs personal cepat tanpa aset gambar eksternal, mengandalkan monogram tipografi dan peralihan tema otomatis.</p>
+              <div class="project-links">
+                <a href="#" class="text-link">Lihat Detail →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="section">
+      <div class="container">
+        <div class="contact-wrapper glass-card reveal">
+          <div class="contact-info">
+            <span class="section-tag">04 // KONTAK</span>
+            <h2>Mari Terhubung</h2>
+            <p>Punya ide diskusi seputar proyek web, sains, atau kolaborasi karya? Kirimkan pesan melalui formulir di samping.</p>
+            <ul class="contact-list">
+              <li>📧 emailanda@contoh.com</li>
+              <li>📍 Yogyakarta & Jawa Tengah, Indonesia</li>
+              <li>🐙 github.com/usernameanda</li>
+            </ul>
+          </div>
+
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="nama">Nama</label>
+              <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="nama@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="pesan">Pesan</label>
+              <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis pesan Anda di sini..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">Kirim Pesan 🌊</button>
+            <p id="formFeedback" class="form-feedback" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Nama Lengkap Anda. Dibuat dengan HTML, CSS & Vanilla JS.</p>
+      <a href="#beranda" class="back-to-top">Kembali ke Atas ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
